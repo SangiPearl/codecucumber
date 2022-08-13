@@ -19,7 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(features = "Script.feature", glue ="com.StepDefinition.com",
 		 strict = true,
-monochrome=true,plugin="com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+monochrome=true,plugin={"json:target/cucumber-reports/Cucumber.json","html:test-output/SparkReport","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )		
 
 public class Test {
