@@ -134,7 +134,7 @@ public class StepDefinition extends BaseClass {
 
 	@When("Take screenshot of the page")
 	public void take_screenshot_of_the_page() throws IOException {
-		screenshot("D:\\2021\\AddactinProject\\image\\order.png");
+		screenshot("D:\\2021\\CucumberProject\\image\\order.png");
 		wait(500);
 
 	}
